@@ -21,6 +21,7 @@ class Ghpush < Formula
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
       system "gradle", "nativeImage"
+      bin.install "build/graal/ghpush"
     end
   
     test do
