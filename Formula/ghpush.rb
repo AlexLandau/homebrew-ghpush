@@ -20,7 +20,7 @@ class Ghpush < Formula
       # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-      system "gradle", "nativeImage"
+      system({"GITHUB_REF_TYPE" => "tag", "GITHUB_REF_NAME" => "v0.0.4"}, "gradle", "nativeImage")
       bin.install "build/graal/ghpush"
     end
   
