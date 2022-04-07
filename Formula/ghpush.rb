@@ -20,7 +20,12 @@ class Ghpush < Formula
       # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-      system({"GITHUB_REF_TYPE" => "tag", "GITHUB_REF_NAME" => "v0.0.4"}, "gradle", "nativeImage")
+
+      # TODO: Make an alternative for passing in the version for --version
+      ENV["GITHUB_REF_TYPE"] = "tag"
+      ENV["GITHUB_REF_NAME"] = "v0.0.4"
+
+      system "gradle", "nativeImage"
       bin.install "build/graal/ghpush"
     end
   
