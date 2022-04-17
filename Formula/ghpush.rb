@@ -1,13 +1,14 @@
 class Ghpush < Formula
   desc "Tool for pushing commits to GitHub as stacks of dependent pull requests"
   homepage "https://github.com/AlexLandau/ghpush"
-  url "https://github.com/AlexLandau/ghpush/archive/0.0.4.tar.gz"
-  sha256 "24e2c7287f3f8732b04344ce36cbb2b9f9cd75afbef8be67848b80d35efd38c6"
+  url "https://github.com/AlexLandau/ghpush/archive/0.0.13.tar.gz"
+  sha256 "983e2fbbae6c3023d8e9f4501eef367027dbf465b439250432eb45a9d1b6bdc8"
   license "Apache-2.0"
 
   depends_on "gradle" => :build
   depends_on "openjdk" => :build
   depends_on "gh"
+  depends_on "zlib"
 
   def install
     # TODO: Make an alternative for passing in the version for --version
