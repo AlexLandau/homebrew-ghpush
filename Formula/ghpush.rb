@@ -8,6 +8,7 @@ class Ghpush < Formula
   depends_on "gradle" => :build
   depends_on "openjdk" => :build
   depends_on "gh"
+  depends_on "zlib"
 
   def install
     # TODO: Make an alternative for passing in the version for --version
