@@ -6,9 +6,9 @@ class Ghpush < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/AlexLandau/homebrew-ghpush/releases/download/ghpush-0.0.14"
-    sha256 cellar: :any,                 big_sur:      "0789a42ceaa5ac716ea24ebe10bc0a08a015be59b39b9448f8bb7df3961d3172"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "ead0dc0089999011c1e34f98a615397b3756fec8661f72b6645a265b88a2bee1"
+    root_url "https://github.com/AlexLandau/homebrew-ghpush/releases/download/ghpush-0.1.0"
+    sha256 cellar: :any,                 big_sur:      "1befd80c1b320804b0e8518552b36f24ba547de5911b43ce23a02e3aba4c02d8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4138d534159c77c7e4903f657839fb2caf422e692e74512962bca84cdcc98334"
   end
 
   depends_on "gradle" => :build
