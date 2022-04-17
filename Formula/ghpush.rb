@@ -10,6 +10,7 @@ class Ghpush < Formula
   depends_on "gh"
   depends_on "zlib"
 
+
   def install
     # TODO: Make an alternative for passing in the version for --version
     ENV["GITHUB_REF_TYPE"] = "tag"
