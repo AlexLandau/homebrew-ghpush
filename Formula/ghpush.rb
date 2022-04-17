@@ -1,8 +1,8 @@
 class Ghpush < Formula
   desc "Tool for pushing commits to GitHub as stacks of dependent pull requests"
   homepage "https://github.com/AlexLandau/ghpush"
-  url "https://github.com/AlexLandau/ghpush/archive/0.0.13.tar.gz"
-  sha256 "983e2fbbae6c3023d8e9f4501eef367027dbf465b439250432eb45a9d1b6bdc8"
+  url "https://github.com/AlexLandau/ghpush/archive/0.0.14.tar.gz"
+  sha256 "0fa18b90ea9e81ed394f6bfe336ff14e265c2afd2f6b7b9f113509bc1f5fc5b8"
   license "Apache-2.0"
 
   depends_on "gradle" => :build
