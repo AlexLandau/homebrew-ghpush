@@ -1,8 +1,8 @@
 class Ghpush < Formula
   desc "Tool for pushing commits to GitHub as stacks of dependent pull requests"
   homepage "https://github.com/AlexLandau/ghpush"
-  url "https://github.com/AlexLandau/ghpush/archive/0.0.14.tar.gz"
-  sha256 "0fa18b90ea9e81ed394f6bfe336ff14e265c2afd2f6b7b9f113509bc1f5fc5b8"
+  url "https://github.com/AlexLandau/ghpush/archive/0.1.0.tar.gz"
+  sha256 "9f82615a558ea35fd076452d24a7480b20ce906a62e49c5d75148d79044764e5"
   license "Apache-2.0"
 
   bottle do
